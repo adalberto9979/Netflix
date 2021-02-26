@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body onload="passouMouse(1);">
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a onclick="carregarFilmes(1);" href="#">Inicio</a>
+                <a onclick="carregarFilmes(2);" href="#">Séries</a>
+                <a onclick="carregarFilmes(3);" href="#">Filmes</a>
+                <a onclick="carregarFilmes(4);" href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="filmeprincipal" class="filme-principal">
+            <div class="container">
+                <h3 id="titulo" class="titulo">.</h3>
+                <p id="descricao" class="descricao"></p>
+                <div>
+                    <button onclick="assitirVideo();" role="button" class="botao">
+                        <i class="fas fa-play"></i> <!-- Classe importada do "https://kit.fontawesome.com/2c36e9b7b1.js" -->
+                        ASSISTIR AGORA
+                    </button>
+                    <button onclick="maisInformacoes();" role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>  <!-- Classe importada do "https://kit.fontawesome.com/2c36e9b7b1.js" -->
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div id="filmes" class="owl-carousel owl-theme">
+            <img class="box-filme" src="img/mini01.jpg" alt="" onmouseover="passouMouse(1);">
+            <img class="box-filme" src="img/mini02.jpg" alt="" onmouseover="passouMouse(2);">
+            <img class="box-filme" src="img/mini03.jpg" alt="" onmouseover="passouMouse(3);">
+            <img class="box-filme" src="img/mini04.jpg" alt="" onmouseover="passouMouse(4);">
+            <img class="box-filme" src="img/mini05.jpg" alt="" onmouseover="passouMouse(5);">
+            <img class="box-filme" src="img/mini06.jpg" alt="" onmouseover="passouMouse(6);">
+            <img class="box-filme" src="img/mini07.jpg" alt="" onmouseover="passouMouse(7);">
+            <img class="box-filme" src="img/mini08.jpg" alt="" onmouseover="passouMouse(8);">
+            <img class="box-filme" src="img/mini09.jpg" alt="" onmouseover="passouMouse(9);">
+            <img class="box-filme" src="img/mini10.jpg" alt="" onmouseover="passouMouse(10);">
+            <img class="box-filme" src="img/mini11.jpg" alt="" onmouseover="passouMouse(11);">
+            <img class="box-filme" src="img/mini12.jpg" alt="" onmouseover="passouMouse(12);">
+            <img class="box-filme" src="img/mini13.jpg" alt="" onmouseover="passouMouse(13);">
+            <img class="box-filme" src="img/mini14.jpg" alt="" onmouseover="passouMouse(14);">
+            <img class="box-filme" src="img/mini15.jpg" alt="" onmouseover="passouMouse(15);">
+            <img class="box-filme" src="img/mini16.jpg" alt="" onmouseover="passouMouse(16);">
+            <img class="box-filme" src="img/mini17.jpg" alt="" onmouseover="passouMouse(17);">
+            <img class="box-filme" src="img/mini18.jpg" alt="" onmouseover="passouMouse(18);">
+            <img class="box-filme" src="img/mini19.jpg" alt="" onmouseover="passouMouse(19);">
+            <img class="box-filme" src="img/mini20.jpg" alt="" onmouseover="passouMouse(20);">
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+ 
+</body>
+</html>
